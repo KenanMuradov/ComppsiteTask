@@ -151,12 +151,10 @@ public class Program
         CarManualBuilder carManualBuilder = new();
         Director director = new();
 
-
         CarManual carManual = director.MakeSUV(carManualBuilder);
         Car sportCar = director.MakeSportCar(carBuilder);
 
         Console.WriteLine(carManual.Engine?.ToString());
         Console.WriteLine(sportCar.Engine?.ToString());
-
     }
 }
